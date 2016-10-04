@@ -10,7 +10,7 @@ const Grocery = ({name, quantity, notes, purchased, starred, onPurchase, onStar,
       { notes && <p className="Grocery-notes">Notes: {notes}</p> }
       <button className="Grocery-purchase" onClick={onPurchase} children={ purchased ? `Unpurchase` : `Purchase` } />
       <button className="Grocery-starred" onClick={onStar} children={ starred ? `Unstar` : `Star` } />
-      <button className='Gocery-remove' onClick={onDelete} children='Remove' />
+      <button className='Grocery-remove' onClick={onDelete} children='Remove' />
     </article>
   );
 };
